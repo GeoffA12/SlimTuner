@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SlimTuner" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tGs-pb-bej" userLabel="tunerButton">
+                                <rect key="frame" x="58" y="403" width="126.5" height="100"/>
+                                <state key="normal" image="icons8-tuning-fork-100 (1)"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c2t-eO-0CF" userLabel="metronomeButton">
+                                <rect key="frame" x="229.5" y="403" width="126.5" height="100"/>
+                                <state key="normal" image="Image"/>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tuner" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VzR-C7-GbU">
+                                <rect key="frame" x="99.5" y="511" width="44" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Metronome" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="faa-2S-Z8M">
+                                <rect key="frame" x="249" y="511" width="88" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WS0-9y-Wzr">
+                                <rect key="frame" x="157" y="548" width="100" height="100"/>
+                                <state key="normal" image="icons8-add-record-100 (2)"/>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Record" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iIq-OG-Y2A" userLabel="Record">
+                                <rect key="frame" x="180" y="656" width="54.5" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.86959513878531147" green="0.7762553707871277" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="c2t-eO-0CF" firstAttribute="width" secondItem="tGs-pb-bej" secondAttribute="width" id="1YC-8Z-w1A"/>
+                            <constraint firstItem="VzR-C7-GbU" firstAttribute="centerX" secondItem="tGs-pb-bej" secondAttribute="centerX" id="1ag-Em-B8J"/>
+                            <constraint firstItem="faa-2S-Z8M" firstAttribute="centerX" secondItem="c2t-eO-0CF" secondAttribute="centerX" id="77g-5l-RBa"/>
+                            <constraint firstItem="faa-2S-Z8M" firstAttribute="top" secondItem="c2t-eO-0CF" secondAttribute="bottom" constant="8" id="DbD-eA-nb6"/>
+                            <constraint firstItem="iIq-OG-Y2A" firstAttribute="top" secondItem="WS0-9y-Wzr" secondAttribute="bottom" constant="8" id="HuD-Jp-zsy"/>
+                            <constraint firstItem="tGs-pb-bej" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="58" id="PDU-tW-bNC"/>
+                            <constraint firstItem="tGs-pb-bej" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="Sgf-Pr-ot9"/>
+                            <constraint firstItem="iIq-OG-Y2A" firstAttribute="centerX" secondItem="WS0-9y-Wzr" secondAttribute="centerX" id="TTh-tu-v3w"/>
+                            <constraint firstItem="WS0-9y-Wzr" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="Xm5-NF-Ivu"/>
+                            <constraint firstItem="c2t-eO-0CF" firstAttribute="leading" secondItem="tGs-pb-bej" secondAttribute="trailing" constant="45" id="bge-0d-wv3"/>
+                            <constraint firstItem="WS0-9y-Wzr" firstAttribute="top" secondItem="tGs-pb-bej" secondAttribute="bottom" constant="45" id="lez-hZ-Z5g"/>
+                            <constraint firstItem="c2t-eO-0CF" firstAttribute="bottom" secondItem="tGs-pb-bej" secondAttribute="bottom" id="llC-cZ-grg"/>
+                            <constraint firstItem="VzR-C7-GbU" firstAttribute="top" secondItem="tGs-pb-bej" secondAttribute="bottom" constant="8" id="maE-4H-xmU"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="c2t-eO-0CF" secondAttribute="trailing" constant="58" id="oUu-ze-nXC"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="57.971014492753625" y="20.758928571428569"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Image" width="100" height="100"/>
+        <image name="icons8-add-record-100 (2)" width="100" height="100"/>
+        <image name="icons8-tuning-fork-100 (1)" width="100" height="100"/>
+    </resources>
+</document>
